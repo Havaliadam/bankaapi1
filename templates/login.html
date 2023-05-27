@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script><!--linkler bölümüm-->
+    <title>Şifre Değiştire ekrani</title>
+</head>
+<body>    
+        <section class="hero is-info is-fullheight"> <!--arka plan rengi-->
+            <div class="hero-body">
+              <div class="container">
+                <div class="columns is-centered"> <!--diğerleri ise sitesinin ortada düzenlenme gibi işlemler yapar--> 
+                  <div class="column is-half">
+     <form  action="/sifre" method="POST" ><!--sifre bölümü-->
+     <h2 class="page-header text-primary text-center">Sifre yenileme</h2> <!--başlık-->
+     <div class="from-group">
+        <label>Numara</label> <!--mumara kısımu-->
+        <input class="input" type="password" name="password" placeholder="Password"><!-- numra  kısmınını girilmesi-->
+     </div>
+     <div class ="from-group">
+      <label>Sifre</label><!--şifre kısımi-->
+      <input class="input" type="password" name="password" placeholder="Password"><!-- şifre kısmını girilmei-->
+      <div class="form-group">
+        <input type="submit" class="btn btn-success btn-block" value="sifre" onClick='alert("başarılı biçimde Şifre değiştirdi)'>
+    </form>
+    <br/>
+    <a href="/" class="btn btn-primary btn-sm">giris sayfası</a><!-- giriş sayfasını yönlendirilir-->
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>
+
+
+

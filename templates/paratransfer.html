@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">   <!--gerekli olan bootstrap linklerini buraya ekliyoruz-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Ada bank internet Bankacılığı</title>
+  </head>
+ 
+  <body>
+    <div class="bg-dark">
+    <header id="header">    <!--ortada olmasını--> 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!--#renkleini belirler-->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">adabank 
+          <a class="fa-solid fa-landmark"></a>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Ana ekran</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">bildirim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ayarlar</a>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">mesajlar</a>
+          </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ödeme planı</a>
+        </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">müşteri hizmetleri</a></li>
+              
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control ms-5 me-2 " type="search " placeholder="Ara" aria-label="ara">
+              <button class="btn btn-outline-success" type="submit">ne aramak istediğiniz</button><!--# arama işleminin gerçekleşir-->
+                    <img src="C:/Users/ayhan/Desktop/bankaapi/adabank.jpg" alt="ada bank" border="0"align="right"/><!--#lpgo muzun resmi-->
+                    <li class="nav ">
+                      <script language="javascript" src="http://ir.sitekodlari.com/saat0.js"></script> <!-- saat ve döviz kurunu gösteren kod-->
+                      </li>
+                      <button type="button" class="btn-close" aria-label="Close">
+                     <a href="/login/anasayfa/">Güvenli çıkış</a>
+  </button><!--# çıkış simgesi-->
+                    
+  
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   
+    
+
+  </form>
+  
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <form action="/login/anasayfa/iban transferleri" method="POST"><!--iban ekranına geçilmesi-->
+      <h3>Para transferleri</h3><!--başlık   -->
+
+      <TABLE ALIGN =left Border WIDTH=40%><!--tablonun rengi boyutunu belirlenmesi-->
+
+        <TR><td>
+          <p>işlem yapmak istediğiniz hesabı seçiniz</p><br/><br/><!--işlem yapmak istediğiniz hesabı şeçme işlemi-->
+          <input type="radio" name="hesap" value="vadesiz hesap">vadesiz hesap<br/>
+                <input type="radio" name="kart"value="kredi karti">Kredi kart numarası<br/>
+              
+        </td></tr>
+      
+
+        <TABLE ALIGN =left Border WIDTH=20%><!--tablonun  boyutunu belirlenmesi-->
+          <TR><td> <h4>Alıcı bilgileri</h4><!--alıcı bilgileri girilmesi-->
+            <p>işlem yapmak istediğiniz hesabı seçiniz</p><!--hesabı şeçilmesi-->
+                  <input type="checkbox" name="iban" value="iban">iban<br/>  <!--hangi ödeme yöntemi şeçmek aşamasaını-->
+                  <input type="checkbox" name="telefon numarası"value="telefon numarsı">telefon numarası<br/>
+                  <input type="checkbox" name="kimlik numarası "value="kimlik no">kimlik numarası<br/>
+                  <input type="checkbox" name="kredi kartı "value="kredi karti">Kredi kart numarası<br/>
+                  <input type="radio" name="kredi kartı "value="kredi karti">hesap no  <input type="text" size="16" id="hesap numarası" placeholder=""><br />
+          </td></tr>
+
+          <TABLE ALIGN="left" Border width=40%><!--tablonun  boyutunu belirlenmesi-->
+            <TR><td> <h4>İşlem bilgileri</h4><!--müşterinin işlem bilgileri-->
+              <b>Tutar:<br/><!--tutar girilmesi-->
+              <input type="number" name="tutar" size="4"><br/>
+              <b>İşlem tarihi:<br/><!--işlem tarihi girilmesi-->
+                 <input type="datetime-local" name="bdaytime">
+                 <br/>
+                 <b>Açıklama:<br/>
+              <textarea cols="40" rows="4">Yorum Kutusu</textarea><br /><br />
+              <b>işlem türü:<br/>
+                <select name="secme"><!--ödemeler şeçilmesi türleri -->
+                  <option>Diğer ödemeler</option>
+                  <option>Ev kirası</option>
+                  <option>bireysel ödeme</option>
+              </select>
+
+
+              <form>
+                <input type="button" value="evet" onClick='alert("para transferleri gerçekleşmiştir  açılmıştır")'><!--işlemini başarılı şekilde gerçekleşmiştir-->
+                <input type ="button" value="hayir" onClick='alert("işlem başarısız")'><!--işlemin başarısız olması-->
+                </form>
+
+
+                </html>
+              </body>
+           
+        
+
+
+
+
+
+
+    
+
+

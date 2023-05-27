@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+       
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">   <!--gerekli olan bootstrap linklerini buraya ekliyoruz-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+ 
+  <body>
+    <div class="bg-dark">
+    <header id="header">    <!--ortada olmasını--> 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!--#renkleini belirler-->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">adabank 
+          <a class="fa-solid fa-landmark"></a>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Ana ekran</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">bildirim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ayarlar</a>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">mesajlar</a>
+          </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ödeme planı</a>
+        </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">müşteri hizmetleri</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control ms-5 me-2 " type="search " placeholder="Ara" aria-label="ara">
+              <button class="btn btn-outline-success" type="submit">ne aramak istediğiniz</button><!--# arama işleminin gerçekleşir-->
+              
+                  <li class="nav ">
+                    <script language="javascript" src="http://ir.sitekodlari.com/saat0.js"></script> <!-- saat ve döviz kurunu gösteren kod-->
+                    </li>
+
+                    <img src="C:/Users/ayhan/Desktop/bankaapi/adabank.jpg" alt="ada bank" border="0"align="right"/><!--#lpgo muzun resmi-->
+                    <button type="button" class="btn-close" aria-label="Close">
+                   <a href="/login/anasayfa/">Güvenli çıkış</a><!--anasayfa geçilmesi-->
+</button><!--# çıkış simgesi-->
+                    
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </form>
+  
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <form action="/login/anasayfa/digerislemler/para yatırma" method="POST"><!--para yatırma ekranınaa geçilmesi-->
+          <div class="col-md-1">
+        <h5> para yatırma ekranı</h5>
+        kredi bilgileri
+          </div>
+        </div>
+        <br />
+         <div class="row">
+          <div class="col-xs-2">
+            Kart Sahibi: <input type="text" class="kayit" id="kartSahibi"  maxlength="25" size="25" placeholder="Adınızı Girin...">
+          </div> 
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-xs-1">
+              Kart No: <input type="text" class="kayit" id="a"  maxlength="4" size="4" placeholder="* * * *">
+              </div> -- 
+            <div class="col-xs-1">
+              <input type="text" class="kayit" id="b"  maxlength="4" size="4" placeholder="* * * *">
+              </div> -- 
+            <div class="col-xs-1">
+              <input type="text" class="kayit" id="c"  maxlength="4" size="4" placeholder="* * * *">
+              </div> -- 
+            <div class="col-xs-1">
+              <input type="text" class="kayit" id="d"  maxlength="4" size="4" placeholder="* * * *">
+              </div>
+            <div class="col-xs-9">
+            </div>    
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-md-5">
+            CVV: <input type="text" class="kayit" id="cvv"  maxlength="3" size="3" placeholder="CVV">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-18">
+            Kart NO: <span id="sonuc"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+          </div>
+        </div>
+      </div>
+
+      <b>yatıracak tutar seçiniz:<br/><!--yatıracak tutarın girilmesi-->
+        <select name="tutar"><!--yatırlacak tutar seçilmesi-->
+            <option>20 TL</option>
+            <option>50 TL</option>
+            <option>100 TL</option>
+            <option>200 TL</option>
+            <option>500 TL</option>
+        </select>
+        <br/>
+        <input type="text" name="diger tutar" value ="00.0">diger tutar<br/><!--yatılaracak diger tutarın belirlenmesi-->
+    
+        <form>
+            <input type="button" value="evet" onClick='alert("para  yatırma için telefona mesaj  üzerinden kod gitmiştir atm  yatırınız")'><!--işlemin başarılı olduğunu telefon mesaj gelmesi-->
+            <input type ="button" value="hayir" onClick='alert("işlem başarısız")'><!--işlemin başarısız olamsı-->
+            </form>
+    
+    </html>
+        </body>

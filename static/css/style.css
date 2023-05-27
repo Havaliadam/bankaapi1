@@ -1,0 +1,128 @@
+*{
+margin: 0;
+padding: 0;
+
+
+}
+body{
+background-image: url(adabank.jpg);
+background-size: cover;
+background-position:center;
+font-family: sans-serif;
+}
+.from-box{
+width: 200px;
+background: rgba(0,0,0,0.5);
+margin: 12% auto ;
+padding: 50px 0;
+color: gray;
+box-shadow: 0 0 15px 4px rgba(0,0,0,0.4);
+}
+h1{
+text-align: center;
+margin-bottom: 40px;
+}
+.input-box{
+margin: 31px auto;
+width: 80%;
+border-bottom: 1px solid #ffff;
+padding-top:10px ;
+padding-bottom: 5px;
+
+}
+.input-box input{
+width: 90%;
+border: none;
+outline: none;
+background: transparent;
+color: black;
+}
+::placeholder{
+color:#ccc;}
+.fa{
+margin-right: 10px;
+
+}
+.eye{
+position: absolute;
+}
+
+#hide1{
+display: none;}
+.giris{
+margin: 40px auto 20px;
+width: 80%;
+display: block;
+outline: none;
+padding: 10px 0;
+border: 1px solid #ffff;
+cursor: pointer;
+background: transparent;
+color: black;
+font-size: 16px;}
+.shawdow{
+    
+    margin:50px; 
+    padding:30px;
+    box-shadow:black;
+    background-color: #ffff;
+
+}
+
+fieldset{
+    width: 500px;
+    border-radius:25px;
+    margin:100px auto;
+    text-align: center;
+    border:2px ridge;
+}
+label{
+    font-size:20px;
+
+}
+select{    
+    height: 40px;
+    width:140px;
+    font-size:20px;
+    border-radius:30px;
+}
+input{
+    width:500px;
+}
+option{
+    padding:30px;
+    border-radius: 30px;
+    background-color:black;
+    color:white;
+}
+
+button{
+    height:50px;
+    width:100px;
+    border-radius:30px;
+    border-style: outset;
+    font-size:30px;
+}
+input:focus{
+    border:2px solid blue;
+}
+input[type="number"]:out-of-range{
+    border:2px solid red;
+}
+
+.container{
+border: 2px beige solid;
+display: table;
+margin: auto;
+
+}
+#sonuc{
+background-color: #e8c7dd;
+
+}
+.kayit{
+border: 2px green solid;
+border-radius: 4px;
+text-align: center;
+}
+

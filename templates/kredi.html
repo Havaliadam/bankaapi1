@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+       
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">   <!--gerekli olan bootstrap linklerini buraya ekliyoruz-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+ 
+  <body>
+    <div class="bg-dark">
+    <header id="header">    <!--ortada olmasını--> 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!--#renkleini belirler-->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">adabank 
+          <a class="fa-solid fa-landmark"></a>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Ana ekran</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">bildirim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ayarlar</a>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">mesajlar</a>
+          </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ödeme planı</a>
+        </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">müşteri hizmetleri</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control ms-5 me-2 " type="search " placeholder="Ara" aria-label="ara">
+              <button class="btn btn-outline-success" type="submit">ne aramak istediğiniz</button><!--# arama işleminin gerçekleşir-->
+                    <img src="C:/Users/ayhan/Desktop/bankaapi/adabank.jpg" alt="ada bank" border="0"align="right"/><!--#lpgo muzun resmi-->
+                    <li class="nav ">
+                      <script language="javascript" src="http://ir.sitekodlari.com/saat0.js"></script> <!-- saat ve döviz kurunu gösteren kod-->
+                      </li>
+                      <button type="button" class="btn-close" aria-label="Close">
+                     <a href="/login/anasayfa/">Güvenli çıkış</a>
+  </button><!--# çıkış simgesi-->
+
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   
+    
+
+  </form>
+  
+          </form>
+        </div>
+      </div>
+    </nav>
+          <form action="/login/anasayfa/diğer işlemler/kredi başvuru"><!--kredi başvuru ekranına geçilmesi-->
+          
+            <div class="container"><!--başlık ortada olamsını sağlar-->
+                <div class="row">
+                    <div class="col-12"><h4>Kredi Bilgileri</h4></div><!-- kredi bilgileri gruplandırması sağlar-->
+                    <div class="col-12">
+                            <div class="form-group">
+                            <label>Kredi türleri</label><!--başlık-->
+                            <select class="form-control" name="kredi türleri" required><!--kredi türleri şeçilmesi-->
+                             <option value ="ihtiyac kredisi">ihtiyac kredisi</option>
+                             <option value ="taşıt kredisi">taşıt kredisi</option> 
+                             <option value ="ev kredisi">ev kredisi</option>
+                            </select>
+                                <label>Kredi Tutarı</label><!--kredi tutarını girilmesi-->
+                                <input type="text" class="form-control" name="kredi" placeholder="Kredi Tutarı" required />
+                            </div>
+                            <div class="form-group">
+                                <label>Vade</label>
+                                <select class="form-control" name="vade" required><!--kredi başvuru aşamasaını vade şeçeneği şeçilmesi-->
+                                    <option value="12">12 Ay</option>
+                                    <option value="24">24 Ay</option>
+                                    <option value="36">36 Ay</option>
+                                    <option value="48">48 Ay</option>
+                                    <option value="60">60 Ay</option>
+                                </select>
+                            </div>
+                            <div class="form-group"><!--gruplandırma -->
+                                <label>faiz oranı</label><!--faiz oranlarını  belirlenmesi-->
+                                <select class="form-control" name="faiz oranları" required>
+                                    <option value="1.89">1.89</option>
+                                    <option value="1.95">1.95 </option>
+                                    <option value="2.60">2.60</option>
+                                </select>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Hesapla</button><!--hesaplama yapılması-->
+
+<p>ihtiyac kredisi başvuru yapabilmek için bilgilerinizi giriniz</p><!--kredi başvurusu için bilgileri girilmesi aşaması-->
+    <label for ="ögrenim durumu">ögrenim durumu :</label>
+        <select id="ögrenim durumu"name="ögrenim durumu"><!--ögrenim durumun seçilmesi-->
+          <!--oğrenim durumu şeçilmesi-->
+        <option
+        value ="ilkokul">ilkokul</option>
+        <option
+        value ="lise">lise</option>        
+        <option
+        value ="önlisans">önlisans</option>
+        <option
+        value ="lisans">lisans</option>
+        </select>
+
+<p >oturma durumunuz giriniz</p><!--müşterinin oturma bilgilerini şeçilmesi-->
+        <label for ="oturma durumu">oturma durumu :</label>
+        <select id="oturma durumu"name="oturma durumu">
+            <option
+            value ="ev sahibi">ev sahibi</option>
+            <option
+            value ="kira">kira</option>
+        </select>
+        <p >calisma durumunuz giriniz</p>
+        <label for="calisma durumu">calisma durumu:</label>
+        <select id ="calisma durumu" name="calisma durumu"><!--müşterinin çalışma durumunu şeçilmesi-->
+            <option
+            value="işci">işci</option>
+            <option
+            value="ögrenci">ögrenci</option>
+            <option
+            value="memur">memur</option>   <!--seçenek-->
+            <option
+            value="mühendis">mühendis</option>
+        </select>
+        
+        <p >lüften telefonuzu giriniz</p><!--müşterinin telefon numarası girilmesi-->
+        <label for="Numara">Numara</label><br>
+        <input type="Numara" id ="Numara" name="Numara"><br>
+        <p style="color:#C0C0C0">lütfen tc giriniz</p><!--müşterinin tc kimlik bilgileri girilmesi-->
+        <label for="kimlik no">kimlik no</label><br>
+        <input type="kimlik no" id ="kimlik no" name="kimlik no"><br>
+        <p> dogum tarihinizi giriniz </p><!--dogum tarihi girilmesi-->
+        Doğum günü (tarih ve saat): <input type="datetime-local" name="bdaytime">
+
+        <input type="submit" value="başvur"><!--kredi başvuru işlemi onaylanmasılması-->
+       
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>      <!--bootstrap için gerekli linkleri -->
+    </body>
+    </html>
+
+
+
+
+<!--script language="javascript" src="http://ir.sitekodlari.com/kredihesaplama1.js"></script-->

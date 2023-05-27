@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!--linkler bölümüm-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <title>Ada bank internet şubesine hoşgeldiniz</title>
+</head>
+<body>
+  <section class="hero is-info is-fullheight"><!-- renk-->
+    <div class="hero-body"> <!--sitesinin  arka plan işlemleri-->
+      <div class="container">
+        <div class="columns is-centered"><!--diğerleri ise sitesinin ortada düzenlenme gibi işlemler yapar--> 
+          <div class="column is-half">
+             <form action="/login" method="POST"><!--login kısıma yönledimesi yapar-->
+              <br><br>
+              <div class="field">
+                <label class="label">Numara</label>
+                <br>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input" type="text" name="number" placeholder="Number"> <!-- Numara girdiğimiz yerdir-->
+                  
+                  <br>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Şifre</label> <!--başlık-->
+                <br>
+                <p class="control has-icons-left">
+                  <input class="input" type="password" name="password" placeholder="Password"><!-- şifre kısımı girdiğim yer-->
+                  <span class="icon is-small is-left"> <!--icon nerede olduğunu belirtir-->
+                    <i class="fas fa-lock"></i><!--icon--> 
+                  </span>
+                </p>
+              </div>
+              <div class="field">
+                <p class="control">
+                  <a href="/login/anasayfa/"target="_blank"><!--ana sayfa yönlerdiri-->
+                    <input type ="button" value="giris yap"  onClick='alert("başarılı biçimde giriş yapıldı)'> <!--giriş başarılı biçimde yapıldığı belirtir-->
+                    </a>
+                  <label>
+                    <input type="checkbox" value="remember-me" > beni hatirla <!--beni hatirla beni hatırla özelliği beliritr-->
+                  </label>
+                 <p class="mt-5 mb-3 text-muted">&copy; 2023</p> <!--yapılış yılını belirtir-->
+                </p>
+              </div>
+            </form>
+            <br/>
+            <a href="/sifre" class="btn btn-primary btn-sm">Sifre unuttum</a> <!--#şifre unuttum ekranına gönderiri-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
